@@ -1,11 +1,12 @@
 variable "region" {
+  description = "AWS region."
   type        = string
-  description = "AWS region"
   default     = "us-east-1"
 }
 
 variable "ami" {
-  type = map(any)
+  description = "AMIS for different regions."
+  type        = map(any)
   default = {
     us-east-1 = "ami-13be557e"
     us-west-2 = "ami-06b94666"
@@ -14,12 +15,14 @@ variable "ami" {
 }
 
 variable "instance_type" {
-  type    = string
-  default = "t2.micro"
+  description = "The instance type to use for the instance."
+  type        = string
+  default     = "t2.micro"
 }
 
 variable "tags" {
-  type = map(any)
+  description = "A map of tags to assign to the resource."
+  type        = map(any)
   default = {
     Name = "HelloWorld"
   }
