@@ -18,7 +18,7 @@ These are the requirements for this module.
 
 ```hcl
 module "ec2_instance" {
-  source  = "github.com/flugel-it/workshop-2-terraform-module/module"
+  source  = "github.com/flugel-it/workshop-2-terraform-module"
 
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
