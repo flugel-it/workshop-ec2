@@ -18,7 +18,7 @@ These are the requirements for this module.
 
 ```hcl
 module "ec2_instance" {
-  source  = "git@github.com:flugel-it/workshop-ec2.git?ref=v1.0"
+  source  = "git@github.com:flugel-it/workshop-ec2.git"
 
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
