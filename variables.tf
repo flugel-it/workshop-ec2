@@ -27,3 +27,7 @@ variable "tags" {
     Name = "HelloWorld"
   }
 }
+
+variable "key_name" {
+  type = string
+}
