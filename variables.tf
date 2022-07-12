@@ -30,4 +30,5 @@ variable "tags" {
 
 variable "key_name" {
   type = string
+  default = "admin"
 }
