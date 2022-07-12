@@ -29,6 +29,6 @@ variable "tags" {
 }
 
 variable "key_name" {
-  type = string
+  type    = string
   default = "admin"
 }
